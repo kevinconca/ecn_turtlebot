@@ -1,7 +1,0 @@
-<launch>
-	<!-- Comment -->
-	<node pkg="turtle_ekf" type="odom_adapter_node" name="odoo">	
-	</node>
-
-
-</launch>

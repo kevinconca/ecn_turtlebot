@@ -1,8 +1,0 @@
-<launch>
-	<!-- Comment -->
-	<node pkg="puppet_hand" type="puppet_broadcaster_node" name="broadcaster" >	
-	</node>
-	<node pkg="puppet_hand" type="puppet_listener_node" name="listener" >	
-	</node> 
-
-</launch>

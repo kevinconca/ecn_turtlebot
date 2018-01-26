@@ -1,2 +1,2 @@
 # ecn_turtlebot
-M1 group proyect
+[ROS package] M1 group proyect

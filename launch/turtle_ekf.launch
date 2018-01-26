@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- Comment -->
+	<node pkg="ecn_turtlebot" type="measurement_node" name="measurement_node" >	
+	</node>
+	<node pkg="ecn_turtlebot" type="ekf_node" name="ekf_node" >	
+	</node> 
+
+</launch>

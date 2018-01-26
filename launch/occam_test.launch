@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="occam_img" pkg="ecn_turtlebot" type="interactive_color_segment">
+        <remap from="/image" to="/occam/image0"/>
+    </node>
+
+</launch>

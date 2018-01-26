@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="beacon_interface" pkg="ecn_turtlebot" type="blob_dist_interface" >
+  </node>
+
+  <node name="triangulation" pkg="ecn_turtlebot" type="triangulation_optimization" >
+    <param name="scaling" type="double" value="0.95" />
+  </node>
+
+</launch>

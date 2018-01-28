@@ -17,7 +17,7 @@ Detailed information can be found in the [PDF report](Presentation_ALI_Serrano.p
 
 ## Nodes description
 
-### Image processing (using OpenCV)
+### Image processing nodes (using OpenCV)
 
 `image_rectifier` rectifies images published by camera (Omni 60)
 * Subscribes to
@@ -27,7 +27,7 @@ Detailed information can be found in the [PDF report](Presentation_ALI_Serrano.p
   * `image_rect`: rectified image
   
 ![raw_image](/Images/non_rectified.jpg "Raw color image") ![rectified](/Images/rectified.jpg "Rectified color image")
-
+___
   
 `image_tiles` combines 5 different images into single panoramic image (no stitching)
 * Subscribes to
@@ -40,6 +40,7 @@ Detailed information can be found in the [PDF report](Presentation_ALI_Serrano.p
   * `image_tiles`: resulting panoramic image
   
 ![tiles](/Images/tiles.jpg)
+___
   
 `blob detector_v1` outputs distance between a beacon (blob) and the omni camera. HSV thesholding and morhological operations are used as pre-processing methods.
 * Subscribes to
@@ -56,6 +57,7 @@ Detailed information can be found in the [PDF report](Presentation_ALI_Serrano.p
   * `SMax`: maximum threshold value for Value channel
   
 ![green_blob](/Images/blob_1.jpg "Green beacon detected") ![green_mask](/Images/blob_2.jpg "Green mask")
+___
 
 `blob dist interface` manages the distances associated with the beacons in the scenario
 * Subscribes to
@@ -65,13 +67,15 @@ Detailed information can be found in the [PDF report](Presentation_ALI_Serrano.p
 * Publishes to
   * `beacon_distances`: distances in cm [blue, red, green]
 
-### Localization
+### Localization nodes
 
 `odom interface` extract relevand data from the `nav_msgd/Odometry` coming from the turtlebot
 * Subscribes to
   * `odom`: contains information about the 3D pose of the turtlebot
 * Publishes to
   * `odom_2D`: publishes 2D pose data (x, y, theta) and their covariance
+  
+___
   
 `ekf_node` implements the extended kalman filter (**not fully tested**)
 * Subscribes to

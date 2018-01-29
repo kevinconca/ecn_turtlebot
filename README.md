@@ -6,14 +6,16 @@
 The aim of this project is to perform localization using an Extended Kalman Filter (EKF) and beacons as visual markers.
 Detailed information can be found in the [PDF report](Presentation_ALI_Serrano.pdf).
 
+## Software
+* ROS kinect
+* c++
+* LaTeX
+
 ## Hardware
 * Turtlebot 2
 * Omni 60 (omnidirectional camera capruting 360° panoramic images at 60Hz)
 
 ![turtlebot](/Images/turtlebot.jpg)
-
-## Software
-* ROS kinect
 
 ## Nodes description
 

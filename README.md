@@ -8,7 +8,7 @@ Detailed information can be found in the [PDF report](Presentation_ALI_Serrano.p
 
 ## Software
 * ROS kinect
-* c++
+* C++
 * LaTeX
 
 ## Hardware

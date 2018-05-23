@@ -2,7 +2,7 @@
 <launch>
   
   <param name="Focal" type="double" value="475.555" />
-  <remap from="/image" to="/usb_cam/image_raw"/> <!--to="/occam_driver/image_tiles0"/> -->
+  <remap from="/image" to="/occam_driver/stitched_image0"/> <!--to="/usb_cam/image_raw"/> -->
   
 
   <node name="dist_interface" pkg="ecn_turtlebot" type="blob_dist_interface">
